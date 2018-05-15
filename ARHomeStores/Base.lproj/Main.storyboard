@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BV1-FR-VrT">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tXr-a1-R10">
+            <objects>
+                <viewController id="BV1-FR-VrT" customClass="ViewController" customModule="ARHomeStores" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="zD0-4K-Q9r">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <arscnView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="h4n-wa-A79">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </arscnView>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="3" translatesAutoresizingMaskIntoConstraints="NO" id="j31-lT-is5">
+                                <rect key="frame" x="12" y="572" width="352" height="75"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="center" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2to-Ku-pYN">
+                                        <rect key="frame" x="0.0" y="0.0" width="86" height="75"/>
+                                        <color key="backgroundColor" cocoaTouchSystemColor="lightTextColor"/>
+                                        <state key="normal" image="rug1swatch.png"/>
+                                        <connections>
+                                            <action selector="chairBtn:" destination="BV1-FR-VrT" eventType="touchUpInside" id="5hx-n8-k2n"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Utl-6g-Oje">
+                                        <rect key="frame" x="89" y="0.0" width="85.5" height="75"/>
+                                        <color key="backgroundColor" cocoaTouchSystemColor="lightTextColor"/>
+                                        <state key="normal" image="rug2swatch.png"/>
+                                        <connections>
+                                            <action selector="tableBtn:" destination="BV1-FR-VrT" eventType="touchUpInside" id="31o-p3-Vee"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7KF-lI-Taj">
+                                        <rect key="frame" x="177.5" y="0.0" width="86" height="75"/>
+                                        <color key="backgroundColor" cocoaTouchSystemColor="lightTextColor"/>
+                                        <state key="normal" image="rug3swatch.png"/>
+                                        <connections>
+                                            <action selector="vaseBtn:" destination="BV1-FR-VrT" eventType="touchUpInside" id="z4z-uO-8f0"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IwO-AA-FJx">
+                                        <rect key="frame" x="266.5" y="0.0" width="85.5" height="75"/>
+                                        <color key="backgroundColor" cocoaTouchSystemColor="lightTextColor"/>
+                                        <state key="normal" image="rug4swatch.png"/>
+                                        <connections>
+                                            <action selector="lampBtn:" destination="BV1-FR-VrT" eventType="touchUpInside" id="qgP-vP-bF1"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="352" id="EBz-aK-1Dx"/>
+                                    <constraint firstAttribute="height" constant="75" id="YLN-Rc-2ME"/>
+                                </constraints>
+                            </stackView>
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2AM-xE-3Zc">
+                                <rect key="frame" x="335" y="20" width="30" height="528"/>
+                                <state key="normal" image="delete-icon"/>
+                                <connections>
+                                    <action selector="deleteButton:" destination="BV1-FR-VrT" eventType="touchUpInside" id="Ah5-eW-dqg"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="pjW-sS-tPx" firstAttribute="trailing" secondItem="j31-lT-is5" secondAttribute="trailing" constant="11" id="IJO-Py-kUz"/>
+                            <constraint firstItem="h4n-wa-A79" firstAttribute="bottom" secondItem="pjW-sS-tPx" secondAttribute="bottom" id="NeK-PM-TAS"/>
+                            <constraint firstItem="h4n-wa-A79" firstAttribute="trailing" secondItem="pjW-sS-tPx" secondAttribute="trailing" id="Oce-rW-w2T"/>
+                            <constraint firstItem="h4n-wa-A79" firstAttribute="leading" secondItem="pjW-sS-tPx" secondAttribute="leading" id="P2O-K5-AcM"/>
+                            <constraint firstItem="pjW-sS-tPx" firstAttribute="trailing" secondItem="2AM-xE-3Zc" secondAttribute="trailing" constant="10" id="R7r-I7-RDD"/>
+                            <constraint firstItem="pjW-sS-tPx" firstAttribute="bottom" secondItem="j31-lT-is5" secondAttribute="bottom" constant="20" id="SWi-gx-dCR"/>
+                            <constraint firstItem="2AM-xE-3Zc" firstAttribute="top" secondItem="zD0-4K-Q9r" secondAttribute="top" constant="20" id="Yoy-IJ-lQa"/>
+                            <constraint firstItem="j31-lT-is5" firstAttribute="leading" secondItem="pjW-sS-tPx" secondAttribute="leading" constant="12" id="ngh-qK-zUt"/>
+                            <constraint firstItem="j31-lT-is5" firstAttribute="top" secondItem="2AM-xE-3Zc" secondAttribute="bottom" constant="24" id="rDk-AC-2EJ"/>
+                            <constraint firstItem="h4n-wa-A79" firstAttribute="top" secondItem="zD0-4K-Q9r" secondAttribute="top" id="rSN-vu-jYr"/>
+                            <constraint firstItem="j31-lT-is5" firstAttribute="leading" secondItem="pjW-sS-tPx" secondAttribute="leading" constant="12" id="zmE-ZK-IkS"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="pjW-sS-tPx"/>
+                    </view>
+                    <connections>
+                        <outlet property="deleteBtn" destination="2AM-xE-3Zc" id="d0i-yo-wTs"/>
+                        <outlet property="sceneView" destination="h4n-wa-A79" id="TXv-aQ-SfS"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="SZV-WD-TEh" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="117.59999999999999" y="118.29085457271366"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="delete-icon" width="30" height="30"/>
+        <image name="rug1swatch.png" width="120" height="120"/>
+        <image name="rug2swatch.png" width="120" height="120"/>
+        <image name="rug3swatch.png" width="120" height="120"/>
+        <image name="rug4swatch.png" width="120" height="120"/>
+    </resources>
+</document>
