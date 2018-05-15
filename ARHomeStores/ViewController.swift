@@ -140,6 +140,7 @@ class ViewController: UIViewController, ARSCNViewDelegate {
         itemNode.position = SCNVector3(x: worldPos.columns.3.x,y: worldPos.columns.3.y,z: worldPos.columns.3.z)
         
         sceneView.scene.rootNode.addChildNode(itemNode)
+        deleteBtn.isHidden = false
     }
     
     
@@ -227,6 +228,8 @@ class ViewController: UIViewController, ARSCNViewDelegate {
     
     @IBAction func deleteButton(_ sender: Any) {
         chosenNode.removeFromParentNode()
+        deleteBtn.isHidden = true
+        
        
     }
     
