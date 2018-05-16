@@ -199,32 +199,38 @@ class ViewController: UIViewController, ARSCNViewDelegate {
         
     }
     
-    @IBAction func chairBtn(_ sender: Any) {
-        chosenNode = myItem.addChair()
-        hiddenButtons()
-    }
+//    @IBAction func chairBtn(_ sender: Any) {
+  //      chosenNode = myItem.addChair()
+  //      hiddenButtons()
+   // }
     
-    @IBAction func tableBtn(_ sender: Any) {
-        chosenNode = myItem.addTable()
-        hiddenButtons()
-    }
+   // @IBAction func tableBtn(_ sender: Any) {
+   //     chosenNode = myItem.addTable()
+   //     hiddenButtons()
+   // }
     
-    @IBAction func vaseBtn(_ sender: Any) {
-        chosenNode = myItem.addVase()
-        hiddenButtons()
-    }
+   // @IBAction func vaseBtn(_ sender: Any) {
+     //   chosenNode = myItem.addVase()
+       // hiddenButtons()
+   // }
     
-    @IBAction func lampBtn(_ sender: Any) {
-        chosenNode = myItem.addLamp()
-        hiddenButtons()
-    }
-    @IBAction func cupBtn(_ sender: Any) {
-        chosenNode = myItem.addCup()
-          hiddenButtons()
-    }
+   // @IBAction func lampBtn(_ sender: Any) {
+     //   chosenNode = myItem.addLamp()
+       // hiddenButtons()
+   // }
+    // @IBAction func cupBtn(_ sender: Any) {
+      //  chosenNode = myItem.addCup()
+     //     hiddenButtons()
+   // }
     
-   
+   // @IBOutlet weak var centerPopupConstraint: NSLayoutConstraint!
     
+   // @IBAction func showPopup(_ sender: Any) {
+        //centerPopupConstraint.constant = 0
+   // }
+    
+    @IBAction func showPopup(_ sender: Any) {
+    }
     
     @IBAction func deleteButton(_ sender: Any) {
         chosenNode.removeFromParentNode()
